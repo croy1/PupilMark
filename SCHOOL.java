@@ -21,7 +21,7 @@ public class SCHOOL
         countHighestMark();
     }
 
-    private void setUpPupilList() throws IOException
+    public void setUpPupilList() throws IOException
     {
         //First user message
         System.out.println("PupilMark School: Pupil Mark update");
@@ -29,8 +29,8 @@ public class SCHOOL
         
         //read file, fetch data as string array containing rows
         String[] dataRows = markFile.readCSVtable();
-        //calculate the number of pupil rows, skip headings
-        noOfPupils = dataRows.length - 1;
+        //calculate the number of pupil rows
+        noOfPupils = dataRows.length;
         
         //update user with number of rows with pupil details
         System.out.println("**" + noOfPupils + "rows read.\n\n");
