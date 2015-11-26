@@ -35,6 +35,14 @@ public class SCHOOL
         //update user with number of rows with pupil details
         System.out.println("**" + noOfPupils + "rows read.\n\n");
         //placeholder
+        
+        //prepare array for pupils
+        pupilList = new PUPIL [noOfPupils];
+        //create pupil objects and copy data
+        for (int i = 0; i< noOfPupils; i++){
+            pupilList[i] = new PUPIL();
+            pupilList[i].readPupilDetails(dataRows[i]);
+        }
     }
 
     public void countHighestMark()
