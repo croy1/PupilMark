@@ -47,16 +47,24 @@ public class SCHOOL
 
     public void countHighestMark()
     {
+        System.out.println("A report of the pupils with the highest mark");
+        //start the count
+        int count = 0;
         //loop for each item ; pupil
         for (int i = 0; i < noOfPupils; i++)
         {
-            //decidenif current item; pupil matches highest mark
+            //decide if current item; pupil matches highest mark
             if ((pupilList[i].getMark()>187) && (pupilList[i].getMark() <200))
             {
-                
+                //add 1 to the count for highest mark
+                count = count +1;
                 //display the details of the member
                 pupilList[i].displayDetails();
             }
         }
+        //display the final count ; mark
+        System.out.print("Total for highest mark is : " + count);
+        //A blank line to seperate the report from others
+        System.out.println();
     }
 }
