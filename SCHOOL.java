@@ -41,7 +41,7 @@ public class SCHOOL
         //create pupil objects and copy data
         for (int i = 0; i< noOfPupils; i++){
             pupilList[i] = new PUPIL();
-            pupilList[i].readPupilDetails(dataRows[i]);
+            pupilList[i].readPupilsMark(dataRows[i]);
         }
     }
 
