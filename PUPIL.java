@@ -39,4 +39,20 @@ public class PUPIL
             return pupilData;
         }
         
+        public float getMark()
+        {
+            return mark;
+        }
+        
+        public void displayDetails()
+        {
+            //output basic details
+            System.out.print("Pupil; " + fName + " " + sName);
+            System.out.print(", Mark is ");
+            System.out.println();
+            
+            
+            
+        }
+        
     }

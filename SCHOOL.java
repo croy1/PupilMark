@@ -47,6 +47,16 @@ public class SCHOOL
 
     public void countHighestMark()
     {
-        //placeholder
+        //loop for each item ; pupil
+        for (int i = 0; i < noOfPupils; i++)
+        {
+            //decidenif current item; pupil matches highest mark
+            if ((pupilList[i].getMark()>187) && (pupilList[i].getMark() <200))
+            {
+                
+                //display the details of the member
+                pupilList[i].displayDetails();
+            }
+        }
     }
 }
