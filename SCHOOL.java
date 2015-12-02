@@ -49,6 +49,8 @@ public class SCHOOL
 
     public void countHighestMark()
     {
+        //prepare a string to write data to disc
+        String fileContent = "";
         System.out.println("A report of the pupils with the highest mark\n");
         int topmark = 0;
         //start the count
@@ -64,6 +66,9 @@ public class SCHOOL
                 count = count +1;
                 //display the details of the member
                 pupilList[i].displayDetails();
+                
+                //use new line to seperate rows in csv file, after 1st line
+                if (cou
             }
         }
         //display the final count ; mark
