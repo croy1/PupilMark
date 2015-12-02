@@ -8,10 +8,12 @@ public class SCHOOL
     //number of pupils to be called
     int noOfPupils;
     FILEREADCSV markFile;
+    FILEWRITECSV resultFile;
 
-    public SCHOOL()
+    public SCHOOL() throws IOException
     {
-        markFile = new FILEREADCSV();
+        markFile = new FILEREADCSV();  //to read file from storage
+        resultFile = new FILEWRITECSV();  //to write data from storage
     }
 
     //top level algorithm
@@ -69,4 +71,6 @@ public class SCHOOL
         //A blank line to seperate the report from others
         System.out.println();
     }
+    
+    
 }
