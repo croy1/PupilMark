@@ -60,27 +60,22 @@ public class SCHOOL
         {
             //decide if current item; pupil matches highest mark
             if (pupilList[i].getMark() > pupilList[topmark].getMark()){
-                {
-                    //choose position of first value
-                    topmark = pupilList[i].getMark();
-                    //display the details of the member
-                    pupilList[i].displayDetails();
 
-                    //join on next line of data for writing to file
-                    fileContent = 
-                    fileContent.concat(pupilList[i].writeDetails());
-                }
+                //choose position of first value
+                topmark = i;
+
             }
-            //display the final count ; mark 
-            System.out.print("The name is;" + pupilList + ", top mark is;" + topmark);
-            //A blank line to seperate the report from others
-            pupilList[topmark].displayDetails();
-            System.out.println();
-
-            //send for writing to file as a string containing all data
-            System.out.print("** Preparing to write data file.");
-            resultFile.writeCSVtable(fileContent);
-            System.out.println("**File written and closed.");
         }
+        //display the final count ; mark 
+        System.out.print("The name is;" + pupilList + ", top mark is;" + topmark);
+        //A blank line to seperate the report from others
+        pupilList[topmark].displayDetails();
+        System.out.println();
+
+        //send for writing to file as a string containing all data
+        System.out.print("** Preparing to write data file.");
+        resultFile.writeCSVtable(fileContent);
+        System.out.println("**File written and closed.");
+
     }
 }
