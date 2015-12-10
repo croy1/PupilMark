@@ -67,7 +67,7 @@ public class SCHOOL
             }
         }
         //display the final count ; mark 
-        System.out.print("The name is;" + pupilList + ", top mark is;" + topmark);
+        System.out.print("The position is;" + topmark + ", the value is;");
         //A blank line to seperate the report from others
         pupilList[topmark].displayDetails();
         System.out.println();
@@ -76,6 +76,7 @@ public class SCHOOL
         System.out.print("** Preparing to write data file.");
         resultFile.writeCSVtable(fileContent);
         System.out.println("**File written and closed.");
+       
 
     }
 }
