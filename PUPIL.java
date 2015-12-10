@@ -45,12 +45,10 @@ public class PUPIL
         
     }
     
-    public void getDetails()
+    public String getDetails()
     {
-        return fName;
-        return sName;
+        return "Pupil; " + fName + " " + sName;
     }
-
     public void displayDetails()
     {
         //output basic details
