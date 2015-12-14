@@ -70,8 +70,7 @@ public class SCHOOL
 
         System.out.println();
 
-        fileContent = fileContent.concat("\n");
-        fileContent.concat(pupilList[topmark].writeDetails());
+        fileContent = fileContent.concat(pupilList[topmark].writeDetails());
 
         //send for writing to file as a string containing all data
         System.out.print("** Preparing to write data file.");
