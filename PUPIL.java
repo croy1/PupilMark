@@ -41,7 +41,7 @@ public class PUPIL
 
     public int getMark()
     {
-        return mark;
+        return mark; 
         
     }
     
@@ -53,7 +53,7 @@ public class PUPIL
     {
         //output basic details
         System.out.print("Pupil; " + fName + " " + sName);
-        System.out.print(", Mark is ");
+        System.out.print("Mark is " + mark);
         System.out.println();
 
     }

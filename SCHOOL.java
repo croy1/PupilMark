@@ -66,20 +66,17 @@ public class SCHOOL
 
             }
         }
-        System.out.print(pupilList[topmark].getfName);
-        //display the final count ; mark 
-        System.out.print("The position is;" + topmark + ", the value is;");
-        //A blank line to seperate the report from others
         pupilList[topmark].displayDetails();
+
         System.out.println();
-        
-        
+
+        fileContent = fileContent.concat("\n");
+        fileContent.concat(pupilList[topmark].writeDetails());
 
         //send for writing to file as a string containing all data
         System.out.print("** Preparing to write data file.");
         resultFile.writeCSVtable(fileContent);
         System.out.println("**File written and closed.");
-       
 
     }
 }
